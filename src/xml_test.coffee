@@ -1,84 +1,12 @@
-xml = """<?xml version="1.0"?>
-<root xmlns="urn:schemas-upnp-org:device-1-0" configId="1337">
-    <specVersion>
-        <major>1</major>
-        <minor>1</minor>
-    </specVersion>
-    <device>
-        <deviceType>urn:schemas-upnp-org:device:InternetGatewayDevice:1</deviceType>
-        <friendlyName>iKuaiOS router</friendlyName>
-        <manufacturer>iKuaiOS</manufacturer>
-        <manufacturerURL>http://www.ikuai8.com/</manufacturerURL>
-        <modelDescription>iKuaiOS router</modelDescription>
-        <modelName>iKuaiOS router</modelName>
-        <modelNumber>1</modelNumber>
-        <modelURL>http://www.ikuai8.com/</modelURL>
-        <serialNumber>12345678</serialNumber>
-        <UDN>uuid:3d3cec3a-8cf0-11e0-98ee-001a6bd2d07b</UDN>
-        <serviceList>
-            <service>
-                <serviceType>urn:schemas-upnp-org:service:Layer3Forwarding:1</serviceType>
-                <serviceId>urn:upnp-org:serviceId:L3Forwarding1</serviceId>
-                <SCPDURL>/L3F.xml</SCPDURL>
-                <controlURL>/ctl/L3F</controlURL>
-                <eventSubURL>/evt/L3F</eventSubURL>
-            </service>
-        </serviceList>
-        <deviceList>
-            <device>
-                <deviceType>urn:schemas-upnp-org:device:WANDevice:1</deviceType>
-                <friendlyName>WANDevice</friendlyName>
-                <manufacturer>MiniUPnP</manufacturer>
-                <manufacturerURL>http://miniupnp.free.fr/</manufacturerURL>
-                <modelDescription>WAN Device</modelDescription>
-                <modelName>WAN Device</modelName>
-                <modelNumber>20210121</modelNumber>
-                <modelURL>http://miniupnp.free.fr/</modelURL>
-                <serialNumber>12345678</serialNumber>
-                <UDN>uuid:3d3cec3a-8cf0-11e0-98ee-001a6bd2d07c</UDN>
-                <UPC>000000000000</UPC>
-                <serviceList>
-                    <service>
-                        <serviceType>urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1</serviceType>
-                        <serviceId>urn:upnp-org:serviceId:WANCommonIFC1</serviceId>
-                        <SCPDURL>/WANCfg.xml</SCPDURL>
-                        <controlURL>/ctl/CmnIfCfg</controlURL>
-                        <eventSubURL>/evt/CmnIfCfg</eventSubURL>
-                    </service>
-                </serviceList>
-                <deviceList>
-                    <device>
-                        <deviceType>urn:schemas-upnp-org:device:WANConnectionDevice:1</deviceType>
-                        <friendlyName>WANConnectionDevice</friendlyName>
-                        <manufacturer>MiniUPnP</manufacturer>
-                        <manufacturerURL>http://miniupnp.free.fr/</manufacturerURL>
-                        <modelDescription>MiniUPnP daemon</modelDescription>
-                        <modelName>MiniUPnPd</modelName>
-                        <modelNumber>20210121</modelNumber>
-                        <modelURL>http://miniupnp.free.fr/</modelURL>
-                        <serialNumber>12345678</serialNumber>
-                        <UDN>uuid:3d3cec3a-8cf0-11e0-98ee-001a6bd2d07d</UDN>
-                        <UPC>000000000000</UPC>
-                        <serviceList>
-                            <service>
-                                <serviceType>urn:schemas-upnp-org:service:WANIPConnection:1</serviceType>
-                                <serviceId>urn:upnp-org:serviceId:WANIPConn1</serviceId>
-                                <SCPDURL>/WANIPCn.xml</SCPDURL>
-                                <controlURL>/ctl/IPConn</controlURL>
-                                <eventSubURL>/evt/IPConn</eventSubURL>
-                            </service>
-                        </serviceList>
-                    </device>
-                </deviceList>
-            </device>
-        </deviceList>
-        <presentationURL>http://192.168.1.1/</presentationURL>
-    </device>
-</root>"""
+XML = """<?xml version="1.0"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0" configId="1337"><specVersion><major>1</major><minor>1</minor></specVersion><device><deviceType>urn:schemas-upnp-org:device:InternetGatewayDevice:1</deviceType><friendlyName>ASUS RT-AC54U Wireless Router</friendlyName><manufacturer>ASUSTek Computer Inc.</manufacturer><manufacturerURL>http://www.asus.com/</manufacturerURL><modelDescription>ASUS RT-AC54U Wireless Router</modelDescription><modelName>Wireless Router</modelName><modelNumber>RT-AC54U</modelNumber><modelURL>http://www.asus.com/Networking/RTAC54U/</modelURL><serialNumber>1.0</serialNumber><UDN>uuid:75802409-bccb-40e7-8e6c-747d24ac17e3</UDN><serviceList><service><serviceType>urn:schemas-upnp-org:service:Layer3Forwarding:1</serviceType><serviceId>urn:upnp-org:serviceId:L3Forwarding1</serviceId><SCPDURL>/L3F.xml</SCPDURL><controlURL>/ctl/L3F</controlURL><eventSubURL>/evt/L3F</eventSubURL></service></serviceList><deviceList><device><deviceType>urn:schemas-upnp-org:device:WANDevice:1</deviceType><friendlyName>WANDevice</friendlyName><manufacturer>MiniUPnP</manufacturer><manufacturerURL>http://miniupnp.free.fr/</manufacturerURL><modelDescription>WAN Device</modelDescription><modelName>WAN Device</modelName><modelNumber>20180604</modelNumber><modelURL>http://miniupnp.free.fr/</modelURL><serialNumber>1.0</serialNumber><UDN>uuid:75802409-bccb-40e7-8e6c-747d24ac17e4</UDN><UPC>000000000000</UPC><serviceList><service><serviceType>urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1</serviceType><serviceId>urn:upnp-org:serviceId:WANCommonIFC1</serviceId><SCPDURL>/WANCfg.xml</SCPDURL><controlURL>/ctl/CmnIfCfg</controlURL><eventSubURL>/evt/CmnIfCfg</eventSubURL></service></serviceList><deviceList><device><deviceType>urn:schemas-upnp-org:device:WANConnectionDevice:1</deviceType><friendlyName>WANConnectionDevice</friendlyName><manufacturer>MiniUPnP</manufacturer><manufacturerURL>http://miniupnp.free.fr/</manufacturerURL><modelDescription>MiniUPnP daemon</modelDescription><modelName>MiniUPnPd</modelName><modelNumber>20180604</modelNumber><modelURL>http://miniupnp.free.fr/</modelURL><serialNumber>1.0</serialNumber><UDN>uuid:75802409-bccb-40e7-8e6c-747d24ac17e5</UDN><UPC>000000000000</UPC><serviceList><service><serviceType>urn:schemas-upnp-org:service:WANIPConnection:1</serviceType><serviceId>urn:upnp-org:serviceId:WANIPConn1</serviceId><SCPDURL>/WANIPCn.xml</SCPDURL><controlURL>/ctl/IPConn</controlURL><eventSubURL>/evt/IPConn</eventSubURL></service></serviceList></device></deviceList></device></deviceList><presentationURL>http://192.168.123.1/</presentationURL></device></root>"""
 
 
-import {li,one} from './xml.js'
+import Xml, {li,one} from './xml.js'
 
-for i from li(xml, 'service')
-  console.log one(i,'serviceId')
+for i from li(XML, 'service')
+  xml = Xml(i)
+  for j from ['serviceId','serviceType','controlURL']
+    console.log j,":",xml.one(j)
+  console.log i+"\n"
 

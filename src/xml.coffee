@@ -19,10 +19,20 @@ export one = (xml, tag)=>
   pos = xml.indexOf("<#{tag}>")
   if pos < 0
     return
-  begin = pos+1+len
+  begin = pos+len
   end = xml.indexOf("</#{tag}>", begin)
   if end < 0
     return
   return xml[begin...end].trim()
+
+export Xml = class Xml
+  constructor: (@$)->
+  li: (tag)->
+    li(@$, tag)
+  one: (tag)->
+    one(@$, tag)
+
+export default ($)=>
+  new Xml($)
 
 
