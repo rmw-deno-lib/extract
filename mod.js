@@ -2,7 +2,7 @@ var li = (xml, tag)=>{
     var begin, end, pos, r, tag_len;
     r = [];
     begin = 0;
-    tag_len = tag.length + 3;
+    tag_len = tag.length + 2;
     while(true){
         pos = xml.indexOf(`<${tag}>`, begin);
         if (pos < 0) {
@@ -24,17 +24,33 @@ var one = (xml, tag)=>{
     if (pos < 0) {
         return;
     }
-    begin = pos + 1 + len;
+    begin = pos + len;
     end = xml.indexOf(`</${tag}>`, begin);
     if (end < 0) {
         return;
     }
     return xml.slice(begin, end).trim();
 };
+var Xml = Xml = class Xml1 {
+    constructor($1){
+        this.$ = $1;
+    }
+    li(tag) {
+        return li(this.$, tag);
+    }
+    one(tag) {
+        return one(this.$, tag);
+    }
+};
+const __default = ($)=>{
+    return new Xml($);
+};
 const mod = function() {
     return {
         li: li,
-        one: one
+        one: one,
+        Xml: Xml,
+        default: __default
     };
 }();
 export { mod as xml };
