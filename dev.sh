@@ -6,7 +6,7 @@ cd $DIR
 . .direnv/bin/pid.sh
 
 if [ ! -n "$1" ] ;then
-exe=src/index.coffee
+exe=src/index_test.coffee
 else
 exe=${@:1}
 fi
