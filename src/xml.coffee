@@ -1,7 +1,7 @@
 export li = (xml, tag)=>
   r = []
   begin = 0
-  tag_len = tag.length + 3
+  tag_len = tag.length + 2
   loop
     pos = xml.indexOf("<#{tag}>", begin)
     if pos < 0
