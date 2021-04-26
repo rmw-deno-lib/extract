@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "index.js",
+  "sourceRoot": "..",
+  "sources": [
+    "src/index.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA,OAAO,CAAA,OAAP,MAAA;;AAEA,OAAA;EACE,GADF",
+  "sourcesContent": [
+    "import * as xml from './xml.js'\n\nexport {\n  xml\n}\n\n"
+  ]
+}
