@@ -10,7 +10,8 @@
   "dependencies": {},
   "devDependencies": {
     "@rmw/md-include": "^0.4.5",
-    "coffeescript": "^2.5.1"
+    "coffeescript": "^2.5.1",
+    "gulp": "^4.0.2"
   },
   "scripts": {
     "prepare": "rm -rf lib && rsync -qav --include='*/' --include='*.txt' --include='*.js' --include='*.mjs' --exclude=* src/ lib/ && npx coffee -m --compile --output lib src/"
