@@ -9,6 +9,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
+    "@rmw/md-include": "^0.4.5",
     "coffeescript": "^2.5.1"
   },
   "scripts": {
