@@ -10,7 +10,7 @@ util for extract text
 import { xml } from 'https://deno.land/x/extract/mod.js'
 ```
 
-or you can export in your `deps.js`
+or export in your `deps.js`
 
 ```
 export { xml } from 'https://deno.land/x/extract/mod.js'
