@@ -5,13 +5,13 @@ util for extract text
 ## import
 
 ```
-import { xml } from 'https://deno.land/x/extract/mod.js'
+import { xml } from 'https://deno.land/x/extract@${version}/mod.js'
 ```
 
 or export in your `deps.js`
 
 ```
-export { xml } from 'https://deno.land/x/extract/mod.js'
+export { xml } from 'https://deno.land/x/extract@${version}/mod.js'
 ```
 
 ## use
