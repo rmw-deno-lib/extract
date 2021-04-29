@@ -4,6 +4,8 @@
 
 <!-- 本文件由 ./readme.make.md 自动生成，请不要直接修改此文件 -->
 
+<!-- 本文件由 ./readme.make.md 自动生成，请不要直接修改此文件 -->
+
 # extract
 
 util for extract text
@@ -11,13 +13,13 @@ util for extract text
 ## import
 
 ```
-import { xml } from 'https://deno.land/x/extract@0.1.7/mod.js'
+import { xml } from 'https://deno.land/x/extract@0.1.9/mod.js'
 ```
 
 or export in your `deps.js`
 
 ```
-export { xml } from 'https://deno.land/x/extract@0.1.7/mod.js'
+export { xml } from 'https://deno.land/x/extract@0.1.9/mod.js'
 ```
 
 ## use
