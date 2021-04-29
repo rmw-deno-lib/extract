@@ -1,4 +1,4 @@
-export const VERSION = '0.1.10'
+export const VERSION = '0.1.11'
 export const startsWithV = false
 export async function prepublish(version: string) {
   const readme = await Deno.readTextFile('./README.md')
