@@ -13,4 +13,5 @@ echo $next
 
 sed -i "s/@[0-9]\+.[0-9]\+.[0-9]\+\//@$next\//g" readme.make.md
 git add -u
+git commit -m "." --no-verify
 git tag $next
