@@ -18,11 +18,11 @@ _pos_begin = (xml, tag, offset=0)=>
   pos = xml.indexOf("<#{tag}", offset)
   if pos < 0
     return -1
-  pos = pos + tag.length + 2
+  pos = pos + tag.length + 1
   c = xml.charAt(pos)
   switch c
     when ">"
-      return pos
+      return pos+1
     when " "
       return xml.indexOf(">",pos+1)
   return -1

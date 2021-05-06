@@ -24,11 +24,11 @@ _pos_begin = (xml, tag, offset = 0)=>{
     if (pos < 0) {
         return -1;
     }
-    pos = pos + tag.length + 2;
+    pos = pos + tag.length + 1;
     c = xml.charAt(pos);
     switch(c){
         case ">":
-            return pos;
+            return pos + 1;
         case " ":
             return xml.indexOf(">", pos + 1);
     }
