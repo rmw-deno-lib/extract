@@ -14,12 +14,24 @@ export li = (xml, tag)=>
     begin = end+tag_len+1
   return
 
-export one = (xml, tag)=>
-  len = tag.length + 2
-  pos = xml.indexOf("<#{tag}>")
+_pos_begin = (xml, tag, offset=0)=>
+  pos = xml.indexOf("<#{tag}", offset)
   if pos < 0
+    return -1
+  pos = pos + tag.length + 2
+  c = xml.charAt(pos)
+  switch c
+    when ">"
+      return pos
+    when " "
+      return xml.indexOf(">",pos+1)
+  return -1
+
+export one = (xml, tag)=>
+  begin = _pos_begin(xml, tag)
+  if begin < 0
     return
-  begin = pos+len
+
   end = xml.indexOf("</#{tag}>", begin)
   if end < 0
     return

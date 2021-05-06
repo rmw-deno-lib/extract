@@ -1,3 +1,4 @@
+var _pos_begin;
 var li = (xml, tag)=>{
     var begin, end, pos, r, tag_len;
     r = [];
@@ -17,14 +18,28 @@ var li = (xml, tag)=>{
         begin = end + tag_len + 1;
     }
 };
-var one = (xml, tag)=>{
-    var begin, end, len, pos;
-    len = tag.length + 2;
-    pos = xml.indexOf(`<${tag}>`);
+_pos_begin = (xml, tag, offset = 0)=>{
+    var c, pos;
+    pos = xml.indexOf(`<${tag}`, offset);
     if (pos < 0) {
+        return -1;
+    }
+    pos = pos + tag.length + 2;
+    c = xml.charAt(pos);
+    switch(c){
+        case ">":
+            return pos;
+        case " ":
+            return xml.indexOf(">", pos + 1);
+    }
+    return -1;
+};
+var one = (xml, tag)=>{
+    var begin, end;
+    begin = _pos_begin(xml, tag);
+    if (begin < 0) {
         return;
     }
-    begin = pos + len;
     end = xml.indexOf(`</${tag}>`, begin);
     if (end < 0) {
         return;
