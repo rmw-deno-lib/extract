@@ -24,7 +24,9 @@ _pos_begin = (xml, tag, offset=0)=>
     when ">"
       return pos+1
     when " "
-      return xml.indexOf(">",pos+1)
+      pos = xml.indexOf(">",pos+1)
+      if pos > 0
+        return pos+1
   return -1
 
 export one = (xml, tag)=>
