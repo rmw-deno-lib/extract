@@ -31,9 +31,24 @@ var one = (xml, tag)=>{
     }
     return xml.slice(begin, end).trim();
 };
+var dict = (xml, tag_li)=>{
+    var r, result, tag;
+    result = {
+    };
+    for (tag of tag_li){
+        r = one(xml, tag);
+        if (r !== void 0) {
+            result[tag] = r;
+        }
+    }
+    return result;
+};
 var Xml = Xml = class Xml1 {
     constructor($1){
         this.$ = $1;
+    }
+    dict(tag_li) {
+        return dict(this.$, tag_li);
     }
     li(tag) {
         return li(this.$, tag);
@@ -49,6 +64,7 @@ const mod = function() {
     return {
         li: li,
         one: one,
+        dict: dict,
         Xml: Xml,
         default: __default
     };

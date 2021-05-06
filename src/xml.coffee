@@ -25,8 +25,18 @@ export one = (xml, tag)=>
     return
   return xml[begin...end].trim()
 
+export dict = (xml, tag_li)=>
+  result = {}
+  for tag from tag_li
+    r = one(xml, tag)
+    if r != undefined
+      result[tag] = r
+  result
+
 export Xml = class Xml
   constructor: (@$)->
+  dict: (tag_li)->
+    dict(@$, tag_li)
   li: (tag)->
     li(@$, tag)
   one: (tag)->
