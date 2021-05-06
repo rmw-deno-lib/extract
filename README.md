@@ -23,13 +23,13 @@ util for extract text
 ## import
 
 ```
-import { xml } from 'https://deno.land/x/extract@0.1.32/mod.js'
+import { xml } from 'https://deno.land/x/extract@0.1.33/mod.js'
 ```
 
 or export in your `deps.js`
 
 ```
-export { xml } from 'https://deno.land/x/extract@0.1.32/mod.js'
+export { xml } from 'https://deno.land/x/extract@0.1.33/mod.js'
 ```
 
 ## use
