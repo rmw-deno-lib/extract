@@ -37,8 +37,6 @@ for i from li(XML, 'service')
 
 ```
 
-```
-
 javascript version
 
 ```javascript
